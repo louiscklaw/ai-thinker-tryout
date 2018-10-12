@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J?
+U 1 1 5BC11E3B
+P 9450 3000
+F 0 "J?" H 9500 3417 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 9500 3326 50  0000 C CNN
+F 2 "" H 9450 3000 50  0001 C CNN
+F 3 "~" H 9450 3000 50  0001 C CNN
+	1    9450 3000
+	1    0    0    -1  
+$EndComp
+Text Label 8550 2800 0    50   ~ 0
+PWR_KEY
+Wire Wire Line
+	8550 2800 9250 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5BC11EE7
+P 9000 3500
+F 0 "#PWR?" H 9000 3250 50  0001 C CNN
+F 1 "GND" H 9005 3327 50  0000 C CNN
+F 2 "" H 9000 3500 50  0001 C CNN
+F 3 "" H 9000 3500 50  0001 C CNN
+	1    9000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3500 9000 2900
+Wire Wire Line
+	9000 2900 9250 2900
+Text Label 8550 3100 0    50   ~ 0
+GPIO14
+Wire Wire Line
+	8550 3100 9250 3100
+Text Label 8550 3200 0    50   ~ 0
+GPIO15
+Wire Wire Line
+	8550 3200 9250 3200
+Text Label 8550 3300 0    50   ~ 0
+GPIO16
+Wire Wire Line
+	8550 3300 9250 3300
+Text Label 10450 2800 2    50   ~ 0
+RESET
+Wire Wire Line
+	10450 2800 9750 2800
+Text Label 10450 2900 2    50   ~ 0
+HST_TXD
+Wire Wire Line
+	10450 2900 9750 2900
+Text Label 10450 3000 2    50   ~ 0
+HST_RXD
+Wire Wire Line
+	10450 3000 9750 3000
+Text Label 10450 3100 2    50   ~ 0
+EAR_L
+Wire Wire Line
+	10450 3100 9750 3100
+Text Label 10450 3200 2    50   ~ 0
+EAR_R
+Wire Wire Line
+	10450 3200 9750 3200
+Text Label 10450 3300 2    50   ~ 0
+GPS_TXD
+Wire Wire Line
+	10450 3300 9750 3300
+$Comp
+L Connector_Generic:Conn_02x06_Top_Bottom J?
+U 1 1 5BC1248B
+P 9450 4250
+F 0 "J?" H 9500 4667 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 9500 4576 50  0000 C CNN
+F 2 "" H 9450 4250 50  0001 C CNN
+F 3 "~" H 9450 4250 50  0001 C CNN
+	1    9450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BC12493
+P 9000 4750
+F 0 "#PWR?" H 9000 4500 50  0001 C CNN
+F 1 "GND" H 9005 4577 50  0000 C CNN
+F 2 "" H 9000 4750 50  0001 C CNN
+F 3 "" H 9000 4750 50  0001 C CNN
+	1    9000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 4750 9000 4150
+Wire Wire Line
+	9000 4150 9250 4150
+Text Label 8550 4250 0    50   ~ 0
+MIC_N
+Wire Wire Line
+	8550 4250 9250 4250
+Text Label 8550 4350 0    50   ~ 0
+MIC_P
+Wire Wire Line
+	8550 4350 9250 4350
+Text Label 8550 4450 0    50   ~ 0
+MIC2_P
+Wire Wire Line
+	8550 4450 9250 4450
+Text Label 10450 4050 2    50   ~ 0
+REC_N
+Wire Wire Line
+	10450 4050 9750 4050
+Text Label 10450 4150 2    50   ~ 0
+UART_TXD
+Wire Wire Line
+	10450 4150 9750 4150
+Text Label 10450 4250 2    50   ~ 0
+UART_RXD
+Wire Wire Line
+	10450 4250 9750 4250
+Text Label 10450 4350 2    50   ~ 0
+GPIO_1
+Wire Wire Line
+	10450 4350 9750 4350
+Text Label 10450 4450 2    50   ~ 0
+UART_RTS
+Wire Wire Line
+	10450 4450 9750 4450
+Text Label 10450 4550 2    50   ~ 0
+UART_CTS
+Wire Wire Line
+	10450 4550 9750 4550
+$Comp
+L customized_power:+5V #PWR?
+U 1 1 5BC12856
+P 8500 4000
+F 0 "#PWR?" H 8500 3850 50  0001 C CNN
+F 1 "+5V" H 8515 4173 50  0000 C CNN
+F 2 "" H 8500 4000 50  0001 C CNN
+F 3 "" H 8500 4000 50  0001 C CNN
+	1    8500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4000 8500 4050
+Wire Wire Line
+	8500 4050 9250 4050
+Text Label 8550 4550 0    50   ~ 0
+REC_P
+Wire Wire Line
+	8550 4550 9250 4550
+$Comp
+L taobao-components:SIM_SOCKET U?
+U 1 1 5BC14530
+P 5950 3650
+F 0 "U?" H 5950 4165 50  0000 C CNN
+F 1 "SIM_SOCKET" H 5950 4074 50  0000 C CNN
+F 2 "" H 5950 3650 50  0001 C CNN
+F 3 "" H 5950 3650 50  0001 C CNN
+	1    5950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BC145A0
+P 5950 4450
+F 0 "#PWR?" H 5950 4200 50  0001 C CNN
+F 1 "GND" H 5955 4277 50  0000 C CNN
+F 2 "" H 5950 4450 50  0001 C CNN
+F 3 "" H 5950 4450 50  0001 C CNN
+	1    5950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4150 5950 4300
+Wire Wire Line
+	6400 3450 6550 3450
+Wire Wire Line
+	6550 3450 6550 3750
+Wire Wire Line
+	6550 4350 5950 4350
+Connection ~ 5950 4350
+Wire Wire Line
+	5950 4350 5950 4450
+Wire Wire Line
+	6400 3750 6550 3750
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3750 6550 4350
+$Comp
+L Device:C C?
+U 1 1 5BC154FD
+P 5200 4050
+F 0 "C?" H 5315 4096 50  0000 L CNN
+F 1 "104" H 5315 4005 50  0000 L CNN
+F 2 "" H 5238 3900 50  0001 C CNN
+F 3 "~" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4200 5200 4300
+Wire Wire Line
+	5200 4300 5950 4300
+Connection ~ 5950 4300
+Wire Wire Line
+	5950 4300 5950 4350
+Wire Wire Line
+	5950 3100 5950 3050
+Wire Wire Line
+	5950 3050 5200 3050
+Wire Wire Line
+	5200 3050 5200 3900
+Text Label 4850 3450 0    50   ~ 0
+VSIM
+Wire Wire Line
+	4850 3450 5500 3450
+Text Label 4850 3550 0    50   ~ 0
+SIM_RST
+Wire Wire Line
+	4850 3550 5500 3550
+Text Label 4850 3650 0    50   ~ 0
+SIM_CLK
+Wire Wire Line
+	4850 3650 5500 3650
+Text Label 4850 3750 0    50   ~ 0
+SIM_DATA
+Wire Wire Line
+	4850 3750 5500 3750
+$EndSCHEMATC

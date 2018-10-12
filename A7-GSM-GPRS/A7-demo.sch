@@ -1,0 +1,312 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 9450 1200 1250 800 
+U 5BC08C6C
+F0 "power_supply" 50
+F1 "power_supply.sch" 50
+$EndSheet
+$Sheet
+S 9450 2250 1250 850 
+U 5BC11D6E
+F0 "io_bank" 50
+F1 "io_bank.sch" 50
+$EndSheet
+$Comp
+L taobao-components:RDA8951(AI-THINKERA7) U?
+U 1 1 5BC21A6B
+P 5100 3450
+F 0 "U?" H 5100 4728 50  0000 C CNN
+F 1 "RDA8951(AI-THINKERA7)" H 5100 4637 50  0000 C CNN
+F 2 "" H 5100 3450 50  0001 C CNN
+F 3 "" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BC21AF1
+P 4950 1800
+F 0 "#PWR?" H 4950 1550 50  0001 C CNN
+F 1 "GND" H 4955 1627 50  0000 C CNN
+F 2 "" H 4950 1800 50  0001 C CNN
+F 3 "" H 4950 1800 50  0001 C CNN
+	1    4950 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 1800 4950 1950
+Wire Wire Line
+	4950 1950 4900 1950
+Wire Wire Line
+	4900 1950 4900 2350
+Wire Wire Line
+	4950 1950 5000 1950
+Wire Wire Line
+	5000 1950 5000 2350
+Connection ~ 4950 1950
+Wire Wire Line
+	5300 2350 5300 1950
+Wire Wire Line
+	5300 1950 5000 1950
+Connection ~ 5000 1950
+Wire Wire Line
+	5500 2350 5500 1950
+Wire Wire Line
+	5500 1950 5300 1950
+Connection ~ 5300 1950
+$Comp
+L customized_power:+4V #PWR?
+U 1 1 5BC22DD6
+P 4750 1800
+F 0 "#PWR?" H 4750 1650 50  0001 C CNN
+F 1 "+4V" H 4765 1973 50  0000 C CNN
+F 2 "" H 4750 1800 50  0001 C CNN
+F 3 "" H 4750 1800 50  0001 C CNN
+	1    4750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1800 4750 1950
+Wire Wire Line
+	4750 1950 4700 1950
+Wire Wire Line
+	4700 1950 4700 2350
+Wire Wire Line
+	4750 1950 4800 1950
+Wire Wire Line
+	4800 1950 4800 2350
+Connection ~ 4750 1950
+Text Label 5200 1200 3    50   ~ 0
+GPS_TXD
+$Comp
+L Device:R R?
+U 1 1 5BC2629B
+P 5200 1700
+F 0 "R?" H 5270 1746 50  0000 L CNN
+F 1 "0" H 5270 1655 50  0000 L CNN
+F 2 "" V 5130 1700 50  0001 C CNN
+F 3 "~" H 5200 1700 50  0001 C CNN
+	1    5200 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1200 5200 1550
+Wire Wire Line
+	5200 1850 5200 2350
+$Sheet
+S 9450 3500 1250 900 
+U 5BC28A2A
+F0 "antenna" 50
+F1 "antenna.sch" 50
+F2 "GSM_ANTENNA" I L 9450 3750 50 
+F3 "GPS_ANTENNA" I L 9450 3950 50 
+$EndSheet
+Text Label 5400 1200 3    50   ~ 0
+GSM_ANTENNA
+Wire Wire Line
+	5400 1200 5400 2350
+Text Label 3350 2950 0    50   ~ 0
+GPS_ANTENNA
+Wire Wire Line
+	3350 2950 4100 2950
+Text Label 8700 3950 0    50   ~ 0
+GPS_ANTENNA
+Wire Wire Line
+	8700 3950 9450 3950
+Text Label 8700 3750 0    50   ~ 0
+GSM_ANTENNA
+Wire Wire Line
+	8700 3750 9450 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5BC2A708
+P 3800 3050
+F 0 "#PWR?" H 3800 2800 50  0001 C CNN
+F 1 "GND" V 3805 2922 50  0000 R CNN
+F 2 "" H 3800 3050 50  0001 C CNN
+F 3 "" H 3800 3050 50  0001 C CNN
+	1    3800 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3050 4100 3050
+Text Label 3350 3150 0    50   ~ 0
+GPIO16
+Wire Wire Line
+	3350 3150 4100 3150
+Text Label 3350 3250 0    50   ~ 0
+GPIO15
+Wire Wire Line
+	3350 3250 4100 3250
+Text Label 3350 3350 0    50   ~ 0
+GPIO14
+Wire Wire Line
+	3350 3350 4100 3350
+Text Label 3350 3450 0    50   ~ 0
+GPIO6
+Wire Wire Line
+	3350 3450 4100 3450
+Text Label 3350 3550 0    50   ~ 0
+GPIO7
+Wire Wire Line
+	3350 3550 4100 3550
+Text Label 3350 3650 0    50   ~ 0
+PWR_KEY
+Wire Wire Line
+	3350 3650 4100 3650
+Text Label 3350 3750 0    50   ~ 0
+GPIO1
+Wire Wire Line
+	3350 3750 4100 3750
+Text Label 3350 3850 0    50   ~ 0
+UART_CTS
+Wire Wire Line
+	3350 3850 4100 3850
+Text Label 3350 3950 0    50   ~ 0
+UART_RTS
+Wire Wire Line
+	3350 3950 4100 3950
+Text Label 3350 4050 0    50   ~ 0
+RESET
+Wire Wire Line
+	3350 4050 4100 4050
+Text Label 4800 5300 1    50   ~ 0
+SIM_RST
+Wire Wire Line
+	4800 5300 4800 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5BC2E019
+P 4700 4900
+F 0 "#PWR?" H 4700 4650 50  0001 C CNN
+F 1 "GND" H 4705 4727 50  0000 C CNN
+F 2 "" H 4700 4900 50  0001 C CNN
+F 3 "" H 4700 4900 50  0001 C CNN
+	1    4700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4550 4700 4900
+Text Label 4900 5300 1    50   ~ 0
+SIM_CLK
+Wire Wire Line
+	4900 5300 4900 4550
+Text Label 5000 5300 1    50   ~ 0
+VSIM
+Wire Wire Line
+	5000 5300 5000 4550
+Text Label 5100 5300 1    50   ~ 0
+SIM_DATA
+Wire Wire Line
+	5100 5300 5100 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5BC2F070
+P 5200 4900
+F 0 "#PWR?" H 5200 4650 50  0001 C CNN
+F 1 "GND" H 5205 4727 50  0000 C CNN
+F 2 "" H 5200 4900 50  0001 C CNN
+F 3 "" H 5200 4900 50  0001 C CNN
+	1    5200 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4550 5200 4900
+Text Label 5300 5300 1    50   ~ 0
+MIC-
+Wire Wire Line
+	5300 5300 5300 4550
+Text Label 5400 5300 1    50   ~ 0
+MIC+
+Wire Wire Line
+	5400 5300 5400 4550
+Text Label 5500 5300 1    50   ~ 0
+MIC2_P
+Wire Wire Line
+	5500 5300 5500 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5BC2FE3C
+P 6450 4050
+F 0 "#PWR?" H 6450 3800 50  0001 C CNN
+F 1 "GND" H 6455 3877 50  0000 C CNN
+F 2 "" H 6450 4050 50  0001 C CNN
+F 3 "" H 6450 4050 50  0001 C CNN
+	1    6450 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 4050 6450 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5BC312BA
+P 6450 3750
+F 0 "#PWR?" H 6450 3500 50  0001 C CNN
+F 1 "GND" H 6455 3577 50  0000 C CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3750 6450 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5BC319E0
+P 6450 3450
+F 0 "#PWR?" H 6450 3200 50  0001 C CNN
+F 1 "GND" H 6455 3277 50  0000 C CNN
+F 2 "" H 6450 3450 50  0001 C CNN
+F 3 "" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3450 6450 3450
+Text Label 6850 3950 2    50   ~ 0
+EAR_L
+Wire Wire Line
+	6850 3950 6100 3950
+Text Label 6850 3850 2    50   ~ 0
+EAR_R
+Wire Wire Line
+	6850 3850 6100 3850
+Text Label 6850 3650 2    50   ~ 0
+REC+
+Wire Wire Line
+	6850 3650 6100 3650
+Text Label 6850 3550 2    50   ~ 0
+REC-
+Wire Wire Line
+	6850 3550 6100 3550
+Text Label 6850 3250 2    50   ~ 0
+UART_TXD
+Wire Wire Line
+	6850 3250 6100 3250
+Text Label 6850 3150 2    50   ~ 0
+UART_RXD
+Wire Wire Line
+	6850 3150 6100 3150
+Text Label 6850 3050 2    50   ~ 0
+HST_RXD
+Wire Wire Line
+	6850 3050 6100 3050
+Text Label 6850 2950 2    50   ~ 0
+HST_TXD
+Wire Wire Line
+	6850 2950 6100 2950
+$EndSCHEMATC
